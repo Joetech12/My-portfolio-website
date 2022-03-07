@@ -592,7 +592,7 @@ a {
   max-width: 450px;
 }
 
-.hero__image__container{
+.hero__image__container {
   width: 100%;
 }
 
@@ -673,6 +673,11 @@ a {
 }
 
 @media screen and (max-width: 479px) {
+  .hero--block {
+    --padding-vertical: 7rem;
+    padding: var(--padding-vertical) 0 00;
+  }
+
   .hero__tag {
     margin-bottom: 3rem;
     font-size: 1.8rem;
@@ -688,16 +693,14 @@ a {
     margin-bottom: 10px;
   }
 
-  .hero__image__container{
-    width: 300px;
+  .hero__image__container {
+    width: 100%;
     margin: 0 auto;
   }
 
-  .hero__image1{
+  .hero__image1 {
     width: 100%;
-    transform: translateX(-30px);
   }
-
 }
 
 @media screen and (max-width: 283px) {
