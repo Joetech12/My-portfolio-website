@@ -372,7 +372,7 @@ a {
 .testimonial__company {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .testimonial__rating {
@@ -380,7 +380,45 @@ a {
   height: 23px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 479px) {
+  .testimonial__body {
+    font-size: 1.6rem;
+    font-style: italic;
+    width: 229px;
+    height: auto;
+    text-align: center;
+  }
+
+  .testimonial__author {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  .testimonial__company {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 240px) {
+  .testimonial__body {
+    font-size: 1.6rem;
+    font-style: italic;
+    width: 229px;
+    height: auto;
+    text-align: center;
+  }
+
+  .testimonial__author {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .testimonial__company {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
 }
 
 /* Collapsibles */
@@ -620,6 +658,31 @@ a {
   }
 }
 
+@media screen and (max-width: 479px){
+  .hero__tag {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    max-width: 82%;
+  }
+
+  .hero__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__button1 {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 283px){
+  .hero__tag {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    max-width: 82%;
+  }
+}
+
 /* Services */
 
 .services--block {
@@ -849,6 +912,20 @@ a {
   }
 }
 
+@media screen and (max-width: 497px){
+  .clients__company {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 16px 20px;
+
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid var(--color-primary-muted);
+    border-bottom: 2px solid var(--color-primary-muted);
+  }
+}
+
 /* Projects */
 .projects--block {
   --padding-vertical: 10rem;
@@ -965,7 +1042,7 @@ a {
 }
 
 .hero__header__contact {
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 .hero__content__contact {
@@ -1029,6 +1106,13 @@ a {
     --padding-vertical: 50px;
     padding: var(--padding-vertical) 2rem;
   }
+}
+
+@media screen and (max-width: 479px){
+.email__contact {
+  display: flex;
+  flex-direction: column;
+}
 }
 
 /* Footer */
@@ -1101,6 +1185,16 @@ a {
     align-items: center;
   }
 }
+
+@media screen and (max-width: 392px){
+  .project__software-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
 
 /* Circle and money projects */
 .circle-st {
