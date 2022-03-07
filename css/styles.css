@@ -533,7 +533,6 @@ a {
     margin-top: 1rem;
   }
 
-
   .nav__toggler {
     display: none;
   }
@@ -556,6 +555,15 @@ a {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .nav__brand {
+    width: 35px;
+    filter: grayscale(0%);
+    transition: all 0.5s;
+    transform: translateY(3px);
+  }
+}
+
 /* Hero */
 .hero--block {
   --padding-vertical: 10rem;
@@ -569,6 +577,7 @@ a {
 
 .hero__header {
   margin-bottom: 2rem;
+  font-size: 60px;
 }
 
 .hero__content {
@@ -658,11 +667,11 @@ a {
   }
 }
 
-@media screen and (max-width: 479px){
+@media screen and (max-width: 479px) {
   .hero__tag {
     margin-bottom: 3rem;
     font-size: 1.8rem;
-    max-width: 82%;
+    width: 250px;
   }
 
   .hero__buttons {
@@ -675,11 +684,11 @@ a {
   }
 }
 
-@media screen and (max-width: 283px){
+@media screen and (max-width: 283px) {
   .hero__tag {
     margin-bottom: 3rem;
     font-size: 1.8rem;
-    max-width: 82%;
+    max-width: 200px;
   }
 }
 
@@ -912,7 +921,7 @@ a {
   }
 }
 
-@media screen and (max-width: 497px){
+@media screen and (max-width: 497px) {
   .clients__company {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1108,11 +1117,11 @@ a {
   }
 }
 
-@media screen and (max-width: 479px){
-.email__contact {
-  display: flex;
-  flex-direction: column;
-}
+@media screen and (max-width: 479px) {
+  .email__contact {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Footer */
@@ -1186,15 +1195,13 @@ a {
   }
 }
 
-@media screen and (max-width: 392px){
+@media screen and (max-width: 392px) {
   .project__software-link {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-
-
 
 /* Circle and money projects */
 .circle-st {
