@@ -592,9 +592,14 @@ a {
   max-width: 450px;
 }
 
+.hero__image__container{
+  width: 100%;
+}
+
 .hero__image {
   filter: grayscale(0%);
   transition: all 1s;
+  width: 100%;
 }
 
 /* .hero__image:hover {
@@ -682,6 +687,17 @@ a {
   .hero__button1 {
     margin-bottom: 10px;
   }
+
+  .hero__image__container{
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .hero__image1{
+    width: 100%;
+    transform: translateX(-30px);
+  }
+
 }
 
 @media screen and (max-width: 283px) {
