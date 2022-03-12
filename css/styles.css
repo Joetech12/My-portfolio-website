@@ -565,7 +565,7 @@ a {
   }
 }
 
-/* Hero */
+/* Hero Section*/
 .hero--block {
   --padding-vertical: 10rem;
   padding: var(--padding-vertical) 2rem;
